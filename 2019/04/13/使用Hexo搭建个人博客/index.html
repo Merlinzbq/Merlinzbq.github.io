@@ -5,12 +5,18 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <title>Hello World - 赵波强博客</title>
+    <title> - 赵波强博客</title>
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
     <meta name="google" content="notranslate">
     <meta name="keywords" content="Fechin,"> 
-    <meta name="description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any pr,"> 
+    <meta name="description" content="title: 使用Hexo搭建个人博客date: 2019-4-13 23:58:18categories: 简书连接tags:
+
+Python
+PEP8
+
+使用Hexo搭建个人博客
+准备工作~ 安,"> 
     <meta name="author" content="赵波强"> 
     <link rel="alternative" href="atom.xml" title="赵波强博客" type="application/atom+xml"> 
     <link rel="icon" href="/img/favicon.png"> 
@@ -35,7 +41,7 @@
     <div class="bar" style="width: 0;"></div>
     <a class="icon-home image-icon" href="javascript:;" data-url="http://yoursite.com"></a>
     <div title="播放/暂停" class="icon-play"></div>
-    <h3 class="subtitle">Hello World</h3>
+    <h3 class="subtitle"></h3>
     <div class="social">
         <!--<div class="like-icon">-->
             <!--<a href="javascript:;" class="likeThis active"><span class="icon-like"></span><span class="count">76</span></a>-->
@@ -53,22 +59,47 @@
     <div class="section">
         <div class="article">
     <div class="main">
-        <h1 class="title">Hello World</h1>
+        <h1 class="title"></h1>
         <div class="stuff">
             <span>四月 13, 2019</span>
             
 
         </div>
         <div class="content markdown">
-            <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="noopener">Deployment</a></p>
+            <p>title: 使用Hexo搭建个人博客<br>date: 2019-4-13 23:58:18<br>categories: 简书连接<br>tags:</p>
+<ul>
+<li>Python</li>
+<li>PEP8</li>
+</ul>
+<h1 id="使用Hexo搭建个人博客"><a href="#使用Hexo搭建个人博客" class="headerlink" title="使用Hexo搭建个人博客"></a>使用Hexo搭建个人博客</h1><ol>
+<li><p>准备工作<br>~ 安装node.js —&gt; npm —&gt; hexo-cli<br>~ 安装git —&gt; 版本控制工具</p>
+</li>
+<li><p>更换npm（nodejs package manager）源<br>npm config set registry <a href="http://registry.npm.taobao.org/" target="_blank" rel="noopener">http://registry.npm.taobao.org/</a></p>
+</li>
+<li><p>安装hexo-cli<br>npm install -g hexo-cli</p>
+</li>
+<li><p>使用hexo搭建博客<br>hexo init blog —&gt; 创建博客目录<br>cd blog —&gt; 进入目录<br>npm install —&gt; 安装项目依赖项</p>
+</li>
+<li><p>编辑博客<br>把写好的markdown文件放到source/_posts目录下<br>hexo generate —&gt; 用markdown生成博客页面</p>
+</li>
+<li><p>将博客托管到github<br>github提供了pages服务专门用来托管个人网站<br>注册github账号并登陆，创建一个托管网站代码的仓库<br>仓库的名字必须是：用户名.github.io</p>
+</li>
+</ol>
+<p>修改博客的配置文件：_config.yml</p>
+<p><a href="https://github.com/hellokitty12345678/hellokitty12345678.github.io.git" target="_blank" rel="noopener">https://github.com/hellokitty12345678/hellokitty12345678.github.io.git</a></p>
+<p>deploy:<br>  type: git<br>  repo: 仓库的完整的URL<br>  branch: master</p>
+<ol start="7">
+<li>将博客部署到github<br>安装git部署器<br>npm install hexo-deployer-git –save</li>
+</ol>
+<p>如果第一次使用git需要先配置用户名和邮箱（可以乱写）<br>git config –global user.email “<a href="mailto:hellokitty@qq.com" target="_blank" rel="noopener">hellokitty@qq.com</a>“<br>git config –global user.name “hellokitty”</p>
+<p>执行部署操作<br>hexo deploy -g</p>
+<p>此操作会提示输入github的账号和密码<br>输入密码时没有回显必须一气呵成的输入完成<br>否则重新执行上面的命令</p>
+<ol start="8">
+<li>绑定自己的域名<br>打开阿里云的控制台 <a href="https://aliyun.com" target="_blank" rel="noopener">https://aliyun.com</a> 登录进去<br>进入“域名控制台” —&gt; “进入域名解析列表” —&gt; 找到自己的域名<br>—&gt; “解析设置” —&gt; “添加记录” —&gt;<br>记录类型：CNAME<br>主机记录：@<br>记录值：hellokitty12345678.github.io</li>
+</ol>
+<p>在blog/source目录下创建一个名为CNAME的文件<br>文件里面写上自己的域名</p>
+<p>jackfrued.top</p>
+<p>重新执行部署命令<br>hexo d -g</p>
 
             <!--[if lt IE 9]><script>document.createElement('audio');</script><![endif]-->
             <audio id="audio" loop="1" preload="auto" controls="controls" data-autoplay="false">
