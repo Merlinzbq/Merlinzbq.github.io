@@ -1,0 +1,240 @@
+
+<!DOCTYPE html>
+<html lang class="loading">
+<head><meta name="generator" content="Hexo 3.8.0">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title> - 赵波强博客</title>
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="google" content="notranslate">
+    <meta name="keywords" content="Fechin,"> 
+    <meta name="description" content="title: Linux操作date: 2019-4-15 20:58:18categories: Linux文件操作相关命令tags:
+
+Python
+PEP8
+
+计算机由硬件和软件构成计算机硬件,"> 
+    <meta name="author" content="赵波强"> 
+    <link rel="alternative" href="atom.xml" title="赵波强博客" type="application/atom+xml"> 
+    <link rel="icon" href="/img/favicon.png"> 
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.css">
+    <link rel="stylesheet" href="/css/diaspora.css">
+    <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+    <script>
+         (adsbygoogle = window.adsbygoogle || []).push({
+              google_ad_client: "ca-pub-8691406134231910",
+              enable_page_level_ads: true
+         });
+    </script>
+    <script async custom-element="amp-auto-ads" src="https://cdn.ampproject.org/v0/amp-auto-ads-0.1.js">
+    </script>
+</head>
+</html>
+<body class="loading">
+    <span id="config-title" style="display:none">赵波强博客</span>
+    <div id="loader"></div>
+    <div id="single">
+    <div id="top" style="display: block;">
+    <div class="bar" style="width: 0;"></div>
+    <a class="icon-home image-icon" href="javascript:;" data-url="http://yoursite.com"></a>
+    <div title="播放/暂停" class="icon-play"></div>
+    <h3 class="subtitle"></h3>
+    <div class="social">
+        <!--<div class="like-icon">-->
+            <!--<a href="javascript:;" class="likeThis active"><span class="icon-like"></span><span class="count">76</span></a>-->
+        <!--</div>-->
+        <div>
+            <div class="share">
+                <a title="获取二维码" class="icon-scan" href="javascript:;"></a>
+            </div>
+            <div id="qr"></div>
+        </div>
+    </div>
+    <div class="scrollbar"></div>
+</div>
+
+    <div class="section">
+        <div class="article">
+    <div class="main">
+        <h1 class="title"></h1>
+        <div class="stuff">
+            <span>四月 15, 2019</span>
+            
+
+        </div>
+        <div class="content markdown">
+            <p>title: Linux操作<br>date: 2019-4-15 20:58:18<br>categories: Linux文件操作相关命令<br>tags:</p>
+<ul>
+<li>Python</li>
+<li>PEP8</li>
+</ul>
+<h2 id="计算机由硬件和软件构成"><a href="#计算机由硬件和软件构成" class="headerlink" title="计算机由硬件和软件构成"></a>计算机由硬件和软件构成</h2><p>计算机硬件的五大部件：运算器、控制器、存储器、输入设备、输出设备</p>
+<p>计算机软件：系统软件（操作系统、编译程序）和应用软件</p>
+<p>操作系统会负责管理和操作硬件，并提供简单的人机交互的接口</p>
+<p>Ken Thompson / Dennis Ritchie —&gt; Unix (1970s)</p>
+<p>Xerox（施乐） —&gt; GUI / 鼠标 / 以太网<br>1980s — IBM PC</p>
+<p>Unix —&gt; BSD —&gt; AIX (IBM)<br>Unix —&gt; System V —&gt; Solaris (SUN)<br>Uinx —&gt; System III —&gt; HP-UX (HP)<br>Unix —&gt; BSD —&gt; FreeBSD —&gt; Macintosh (Apple) —&gt; macOS —&gt; iOS / watchOS / tvOS<br>Unix —&gt; Minix (Andrew Tanenbaum) —&gt; Linux (Linus Torvalds) —&gt; Android (Google)</p>
+<p>Linux发型版本</p>
+<ul>
+<li>Redhat</li>
+<li>Ubuntu — 个人</li>
+<li>CentOS — 服务器 — 远程访问</li>
+<li>Fedora</li>
+<li>SUSE</li>
+<li>Debian</li>
+</ul>
+<p>个人操作系统 - Windows / macOS<br>服务器操作系统 - 商用Unix / Linux / Windows Server</p>
+<p>多用户多任务操作系统</p>
+<p>要求：基本使用 / 安装和配置服务 / 部署项目</p>
+<p>命令 [命令的参数] [命令作用的对象]<br>ls  -laR        .pip<br>cat             /proc/cpuinfo<br>cat -n            /proc/cpuinfo</p>
+<p>command not found - 命令没有找到（敲了无效的命令）</p>
+<p>Linux常用命令：</p>
+<ol>
+<li>w / who / whoami / last - 查看登录用户情况</li>
+<li>adduser / passwd - 创建用户修改密码</li>
+<li>date / cal - 查看日期日历</li>
+<li>write / wall / mesg(n,y) - 发送消息</li>
+<li>clear - 清除屏幕</li>
+<li>logout / exit - 退出登录</li>
+<li>man / info / –help - 查看帮助</li>
+<li>history - 历史命令 - !命名编号 - 再次执行历史命令<br>-c 清除历史命令</li>
+<li>reboot - 重启系统 - init 6</li>
+<li>shutdown - 关机 - init 0</li>
+</ol>
+<h2 id="Linux文件操作相关命令："><a href="#Linux文件操作相关命令：" class="headerlink" title="Linux文件操作相关命令："></a>Linux文件操作相关命令：</h2><ol>
+<li>pwd - print working directory - 打印工作目录</li>
+<li>cd - change directory - 改变目录 - 相对路径和绝对路径(..和/)</li>
+<li>ls - list directory contents - 列出目录下的内容</li>
+</ol>
+<ul>
+<li>-l - 长格式查看</li>
+<li>-a - 查看所有文件 </li>
+<li>-在Linux系统中以点开头的文件和文件夹是隐藏的</li>
+<li>-R - 递归式的查看 - 遇到文件夹要递归的列出文件夹下的内容</li>
+</ul>
+<ol start="4">
+<li>cat - concatenate - 连接多个文件（查看文件的内容）<br> -n -以列行查看</li>
+<li>touch - 创建空文件或者修改已有文件的最后访问时间</li>
+<li>mkdir - make directory - 创建文件夹<br>-p - 如果需要就创建父文件夹</li>
+<li>rm - remove - 删除<br>-f - 强制删除<br>-r - 递归删除 - 删文件夹需要指定该参数</li>
+<li>rmdir - remove empty directory - 删除空文件夹</li>
+<li>wget - 通过网络获取文件<ul>
+<li>例如：wget <a href="https://www.python.org/ftp/python/3.7.3/Python-3.7.3.tar.xz" target="_blank" rel="noopener">https://www.python.org/ftp/python/3.7.3/Python-3.7.3.tar.xz</a></li>
+<li>例如：wget <a href="https://www.python.org/ftp/python/3.7.3/Python-3.7.3.tgz" target="_blank" rel="noopener">https://www.python.org/ftp/python/3.7.3/Python-3.7.3.tgz</a></li>
+</ul>
+</li>
+<li>gzip / gunzip - 文件压缩/解压缩（gz/tgz）<ul>
+<li>例如：gunzip Python-3.7.3.tgz</li>
+</ul>
+</li>
+<li>xz - 文件压缩/解压缩（xz）<br>-z - 压缩<br>-d - 解压缩<ul>
+<li>例如：xz -d Python-3.7.3.xz</li>
+</ul>
+</li>
+<li>tar - archive - 文件归档/解归档<br>-xvf - 解归档（将一个文件拆成多个文件）<ul>
+<li>例如：tar -xvf Python-3.7.3.tar<br>-cvf - 创建归档文件（将多个文件合并成一个文件）</li>
+</ul>
+</li>
+<li>wc - word count - 查看文件行数、单词数、字符数<br>-l - 查看行数<br>-w - 查看单词数<br>-c - 查看字符数</li>
+<li>sort - 文件排序<br>-r - 降序（默认是从小到大 - 升序）</li>
+<li>uniq - unique - 文件去重（相邻相同的内容会被过滤掉）</li>
+<li>head / tail - 查看文件的开头/结尾部分<br>head -10(查看前10行)</li>
+<li>more / less - 分页查看文件<ul>
+<li>例子：cat -n taobao.html | more</li>
+</ul>
+</li>
+<li>diff - different - 比较文件的差别</li>
+<li>echo 回声语句 echo &gt;   echo&gt;&gt;</li>
+</ol>
+<p>Ctrl+D - 结束输入<br>Ctrl+C - 中断一个正在执行的命令<br>Ctrl+W - 删除命令中的一块<br>Ctrl+A - 光标到行首<br>Ctrl+E - 光标到行尾</p>
+<p>Python - 解释器<br>CPython - C语言实现的Python解释器<br>Jython - Java语言实现的Python解释器<br>IronPython - C#语言实现的Python解释器<br>PyPy - Python语言实现的Python解释器</p>
+
+            <!--[if lt IE 9]><script>document.createElement('audio');</script><![endif]-->
+            <audio id="audio" loop="1" preload="auto" controls="controls" data-autoplay="false">
+                <source type="audio/mpeg" src>
+            </audio>
+            
+                <ul id="audio-list" style="display:none">
+                    
+                        <li title="0" data-url="http://link.hhtjim.com/163/5146554.mp3"></li>
+                    
+                        <li title="1" data-url="http://link.hhtjim.com/qq/001faIUs4M2zna.mp3"></li>
+                    
+                </ul>
+            
+        </div>
+        
+    <div id="gitalk-container" class="comment link" data-ae="false" data-ci data-cs data-r data-o data-a data-d="false">查看评论</div>
+
+
+    </div>
+    
+</div>
+
+
+    </div>
+</div>
+</body>
+<script src="//cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.min.js"></script>
+<script src="//lib.baomitu.com/jquery/1.8.3/jquery.min.js"></script>
+<script src="/js/plugin.js"></script>
+<script src="/js/diaspora.js"></script>
+<link rel="stylesheet" href="/photoswipe/photoswipe.css">
+<link rel="stylesheet" href="/photoswipe/default-skin/default-skin.css">
+<script src="/photoswipe/photoswipe.min.js"></script>
+<script src="/photoswipe/photoswipe-ui-default.min.js"></script>
+
+<!-- Root element of PhotoSwipe. Must have class pswp. -->
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+    <!-- Background of PhotoSwipe. 
+         It's a separate element as animating opacity is faster than rgba(). -->
+    <div class="pswp__bg"></div>
+    <!-- Slides wrapper with overflow:hidden. -->
+    <div class="pswp__scroll-wrap">
+        <!-- Container that holds slides. 
+            PhotoSwipe keeps only 3 of them in the DOM to save memory.
+            Don't modify these 3 pswp__item elements, data is added later on. -->
+        <div class="pswp__container">
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+        </div>
+        <!-- Default (PhotoSwipeUI_Default) interface on top of sliding area. Can be changed. -->
+        <div class="pswp__ui pswp__ui--hidden">
+            <div class="pswp__top-bar">
+                <!--  Controls are self-explanatory. Order can be changed. -->
+                <div class="pswp__counter"></div>
+                <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+                <button class="pswp__button pswp__button--share" title="Share"></button>
+                <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+                <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+                <!-- Preloader demo http://codepen.io/dimsemenov/pen/yyBWoR -->
+                <!-- element will get class pswp__preloader--active when preloader is running -->
+                <div class="pswp__preloader">
+                    <div class="pswp__preloader__icn">
+                      <div class="pswp__preloader__cut">
+                        <div class="pswp__preloader__donut"></div>
+                      </div>
+                    </div>
+                </div>
+            </div>
+            <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                <div class="pswp__share-tooltip"></div> 
+            </div>
+            <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+            </button>
+            <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+            </button>
+            <div class="pswp__caption">
+                <div class="pswp__caption__center"></div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+</html>
